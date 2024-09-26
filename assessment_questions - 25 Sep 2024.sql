@@ -32,7 +32,7 @@ GROUP BY u.city;
 -- ****************************************************************
 SELECT u.mobile_app, COUNT(u.user_id) AS "Number of Mobile Users"
 FROM users u
-WHERE u.mobile_app = "mobile-user";
+WHERE u.mobile_app IN("mobile-user");
 
 -- 5. Query for the sign up counts for each hour.
 -- Hint: https://dev.mysql.com/doc/refman/5.7/en/date-and-time-functions.html#function_date-format 
